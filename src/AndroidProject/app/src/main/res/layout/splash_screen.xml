@@ -6,7 +6,7 @@
     tool:context=".SplashScreenActivity"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/White">
+    android:background="@color/CaptainPlanet">
     <TextView
         android:id="@+id/our_logo"
         android:layout_width="wrap_content"
@@ -16,7 +16,7 @@
         android:text="Captain Planet"
         android:textSize="50dp"
         android:fontFamily="sans-serif-condensed"
-        android:textColor="@color/orange"
+        android:textColor="@color/White"
         >
 
     </TextView>

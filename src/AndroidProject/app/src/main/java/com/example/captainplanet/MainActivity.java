@@ -444,9 +444,9 @@ public class MainActivity extends AppCompatActivity
                             ppm_indicator.setVisibility(View.VISIBLE);
 
 
-                            if(f <3){
+                            if(f <100){
                              setSafetyLevel();
-                            }else if (f >3){
+                            }else if (f >100){
                                 setDangerousLevel();
                             }
                             //Toast.makeText(getApplicationContext(),""+object1.getString("field1"),Toast.LENGTH_LONG).show();
@@ -489,11 +489,11 @@ public class MainActivity extends AppCompatActivity
                             temp_progress_bar.setVisibility(View.INVISIBLE);
                             temperature_text.setText(new DecimalFormat("###.###").format(f));
                             c_indicator.setVisibility(View.VISIBLE);
-                            f = Float.parseFloat(fromCelciusToFeh(Float.parseFloat(object1.getString("field2"))));
-                            temperature_text_f.setText(new DecimalFormat("###.###").format(f));
+                            float f2 = Float.parseFloat(fromCelciusToFeh(Float.parseFloat(object1.getString("field2"))));
+                            temperature_text_f.setText(new DecimalFormat("###.###").format(f2));
                             f_indicator.setVisibility(View.VISIBLE);
                             //Toast.makeText(getApplicationContext(),""+
-                            if(f<10 || f>30){
+                            if(f<10 || f>32){
                                 setDangerousLevel();
                             }
                             break ;
@@ -537,7 +537,7 @@ public class MainActivity extends AppCompatActivity
                             humidity_text.setText(new DecimalFormat("###.###").format(f));
                             h_indicator.setVisibility(View.VISIBLE);
                             //Toast.makeText(getApplicationContext(),""+object1.getString("field1"),Toast.LENGTH_LONG).show();
-                            if(f<30 || f>50){
+                            if(f<30 || f>65){
                                 setDangerousLevel();
                             }
                             break ;
